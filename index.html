@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side-image">
+            <div class="logo"><img src="images/odin-lined.png" alt="odin logo">ODIN</div>
+            <div class="image-footer">Photo by <a href="https://unsplash.com/@wariontaipei" target="_blank">WARION Taipei</a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a></div>
+        </div>
+        <div class="content">
+            <div class="top-content">
+                <span>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</span>
+                <br>
+                <span>Sign up now to get started.</span>
+                <br> <br>
+                <span>You know you want to</span>
+            </div>
+            <div class="middle-content">
+                <div class="sign-up-title">
+                    <h3>Let's do this!</h3>
+                </div>
+                <div class="form-details">
+                    <form action="" id="form-info" onsubmit="">
+                        <div class="left-details">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" class="form-data" id="first_name" required>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" class="form-data" id="email" required>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" class="form-data" id="password" onchange="verify();" required>
+                            <span id="message"></span>
+                        </div>
+                        <div class="right-details">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" class="form-data" id="last_name" required>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="text" name="phone_number" class="form-data" id="phone_number" required>
+                            <label for="confirm_pass">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_pass" class="form-data" id="confirm_pass" onchange="verify();" required>
+                        </div>   
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-content">
+                <input type="submit" form="form-info" value="Create Account" id="create-account">
+                <br>
+                <span>Already have an account? <a href="/#" id="login">Login</a></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
